@@ -1,17 +1,8 @@
 import http, { IncomingMessage, Server, ServerResponse } from 'http';
 import config from './config';
-import addRoutes, { RouteHandler, routes } from './helpers/RouteHandler';
+import { RouteHandler, routes } from './helpers/RouteHandler';
+import './routes'
 
-
-addRoutes("GET", "/", (req, res) => {
-    res.writeHead(200, { 'content-type': 'application/json' });
-    res.end(
-        JSON.stringify({
-            message: 'hello',
-            path: req.url
-        })
-    )
-})
 
 const server: Server = http.createServer(
     (req: IncomingMessage, res: ServerResponse) => {
@@ -40,6 +31,10 @@ const server: Server = http.createServer(
                 path
             }))
         }
+
+
+
+        // RAW WAY TO HANDLE
 
         // if (req.url == '/' && req.method == 'GET') {
         //     res.writeHead(200, { 'content-type': 'application/json' });
