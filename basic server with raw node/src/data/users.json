@@ -1,14 +1,48 @@
 [
   {
-    "user": "mysterio-O",
-    "class": "null"
+    "id": "7f685e6c-2c02-4e26-a3b6-849b40b099d1",
+    "username": "john doe",
+    "is_verified": "true",
+    "is_updated": "true"
   },
   {
-    "user": "mystehjvvbrio-O",
-    "class": "null"
+    "id": "3e988c46-413b-4459-981f-1872e5216615",
+    "username": "john wick",
+    "is_verified": "false"
   },
   {
-    "user": "mysterio-O",
-    "class": "null"
+    "id": "61ba6e87-4fab-4904-9dd7-62f236945001",
+    "username": "robert downey",
+    "is_verified": "false"
+  },
+  {
+    "id": "e8ab22bd-f70c-4e99-8b07-18fef83cb323",
+    "username": "the rock",
+    "is_verified": "false"
+  },
+  {
+    "id": "850f5b09-296f-4309-a055-d6ef0812da01",
+    "created_at": "1,764,324,354,372",
+    "username": "elon mask",
+    "is_verified": "true"
+  },
+  {
+    "id": "fe788318-c2f0-4bc0-974e-17698b245fe2",
+    "created_at": "1764324391575",
+    "username": "steve rogers",
+    "is_verified": "true"
+  },
+  {
+    "id": "640a78b6-6120-498a-80bd-28f61d54e80b",
+    "created_at": 1764324419242,
+    "username": "doctor strange",
+    "is_verified": "false",
+    "updated_at": "2025-11-28T10:09:15.251Z"
+  },
+  {
+    "id": "04ccaef3-449b-4b17-8307-c4384e387d4b",
+    "created_at": "2025-11-28T10:07:52.810Z",
+    "username": "thor",
+    "is_verified": "unknown"
   }
 ]
