@@ -1,11 +1,5 @@
 [
   {
-    "id": "7f685e6c-2c02-4e26-a3b6-849b40b099d1",
-    "username": "john doe",
-    "is_verified": "true",
-    "is_updated": "true"
-  },
-  {
     "id": "3e988c46-413b-4459-981f-1872e5216615",
     "username": "john wick",
     "is_verified": "false"

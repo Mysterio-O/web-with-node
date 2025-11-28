@@ -1,4 +1,4 @@
-import { readUsers, writeUsers } from "../helpers/fileDB";
+import { deleteUser, readUsers, writeUsers } from "../helpers/fileDB";
 import parseBody from "../helpers/parseBody";
 import addRoutes from "../helpers/RouteHandler"
 import sendJson from "../helpers/sendJson"
@@ -148,6 +148,36 @@ addRoutes("GET", "/api/users/:id", async (req, res) => {
     sendJson(res, 500, {
       success: false,
       message: "internal server error"
+    })
+  }
+
+})
+
+
+addRoutes("DELETE", "/api/users/:id", async (req, res) => {
+  const { id } = (req as any).params;
+
+  try{
+    if(!id)return null;
+    const result =  deleteUser(id);
+    if(result?.success !== false){
+      sendJson(res,200,{
+        success:true,
+        message:"user deleted"
+      })
+    }else{
+      sendJson(res,400,{
+        success:false,
+        message:'failed to delete user'
+      })
+    }
+    
+  }
+  catch(err){
+    console.error("error deleting user",err);
+    sendJson(res,500,{
+      success:false,
+      message:"internal server error deleting user"
     })
   }
 
