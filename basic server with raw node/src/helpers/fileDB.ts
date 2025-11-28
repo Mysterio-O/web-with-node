@@ -5,7 +5,8 @@ const filePath = path.join(process.cwd(), "./src/data/users.json");
 
 export function readUsers() {
     const data = fs.readFileSync(filePath, "utf-8");
-    return JSON.parse(data);
+    if (data) return JSON.parse(data);
+    return [];
 }
 
 export function writeUsers(users: any) {
